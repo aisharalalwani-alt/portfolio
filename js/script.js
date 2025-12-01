@@ -7,7 +7,13 @@ gsap.from(".project-card", { opacity:0, y:50, duration:1, stagger:0.2, scrollTri
 
 gsap.from("#contact h2", { opacity:0, y:50, duration:1, scrollTrigger:{ trigger:"#contact", start:"top 80%" }});
  
- 
+const burger = document.getElementById("burger");
+const menu = document.querySelector(".header-menu");
+
+burger.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
+
 // ===== TYPED JS =====
 
 const selectTyped = document.querySelector('.typed');
